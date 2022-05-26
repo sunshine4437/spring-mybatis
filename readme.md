@@ -1,4 +1,4 @@
-##### 0. web.xml
+#### 0. web.xml
 
 + 하나씩 주석 해제하며 사용
 
@@ -21,7 +21,7 @@
 <load-on-startup> 1 </load-on-startup>
 </servlet>
 ```
-##### 1. mybatis-context1.xml
+#### 1. mybatis-context1.xml
 + sqlSessionTemplate 사용
 ```
 <bean id="dataSource" class="org.apache.commons.dbcp2.BasicDataSource">
@@ -42,7 +42,7 @@
     <constructor-arg name="sqlSessionFactory" ref="sqlSessionFactory" />
 </bean>
 ```
-##### 2. mybatis-context2.xml
+#### 2. mybatis-context2.xml
 + mybatis-spring:scan 사용
 ```
 <bean id="dataSource" class="org.apache.commons.dbcp2.BasicDataSource">
@@ -65,7 +65,7 @@
 <mybatis-spring:scan base-package="com.myspring.myspring"/>
 ```
 
-##### 3. mabatis-context3.xml
+#### 3. mabatis-context3.xml
 + MapperScannerConfigurer 사용
 ```
 <bean id="dataSource" class="org.apache.commons.dbcp2.BasicDataSource">
